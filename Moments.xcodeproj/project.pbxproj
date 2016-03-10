@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1834591C91264F001C5976 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1834581C91264F001C5976 /* LoginViewController.swift */; };
 		2F8D78A61C91179A004C40AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D78A51C91179A004C40AF /* AppDelegate.swift */; };
 		2F8D78A81C91179A004C40AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D78A71C91179A004C40AF /* ViewController.swift */; };
 		2F8D78AB1C91179A004C40AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D78A91C91179A004C40AF /* Main.storyboard */; };
 		2F8D78AD1C91179A004C40AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D78AC1C91179A004C40AF /* Assets.xcassets */; };
 		2F8D78B01C91179A004C40AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D78AE1C91179A004C40AF /* LaunchScreen.storyboard */; };
+		9AAA9785C4FE35D93793C28E /* Pods_Moments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB8D2AF77894AB87D70AAED /* Pods_Moments.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1834581C91264F001C5976 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F8D78A21C911799004C40AF /* Moments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8D78A51C91179A004C40AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F8D78A71C91179A004C40AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		2F8D78AC1C91179A004C40AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F8D78AF1C91179A004C40AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F8D78B11C91179A004C40AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3019A229D0D7AE63C90AF63B /* Pods-Moments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moments/Pods-Moments.release.xcconfig"; sourceTree = "<group>"; };
+		8AB8D2AF77894AB87D70AAED /* Pods_Moments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF8FD56B81F7CDBE78E67A6 /* Pods-Moments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moments.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moments/Pods-Moments.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AAA9785C4FE35D93793C28E /* Pods_Moments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16A3C557033F109C9570DD43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AB8D2AF77894AB87D70AAED /* Pods_Moments.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F8D78991C911799004C40AF = {
 			isa = PBXGroup;
 			children = (
 				2F8D78A41C91179A004C40AF /* Moments */,
 				2F8D78A31C911799004C40AF /* Products */,
+				CFF896A4AECDDCF094C332A9 /* Pods */,
+				16A3C557033F109C9570DD43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				2F8D78AC1C91179A004C40AF /* Assets.xcassets */,
 				2F8D78AE1C91179A004C40AF /* LaunchScreen.storyboard */,
 				2F8D78B11C91179A004C40AF /* Info.plist */,
+				2F1834581C91264F001C5976 /* LoginViewController.swift */,
 			);
 			path = Moments;
+			sourceTree = "<group>";
+		};
+		CFF896A4AECDDCF094C332A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADF8FD56B81F7CDBE78E67A6 /* Pods-Moments.debug.xcconfig */,
+				3019A229D0D7AE63C90AF63B /* Pods-Moments.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F8D78B41C91179A004C40AF /* Build configuration list for PBXNativeTarget "Moments" */;
 			buildPhases = (
+				531A12E7BC39BA5F9A9A4D05 /* Check Pods Manifest.lock */,
 				2F8D789E1C911799004C40AF /* Sources */,
 				2F8D789F1C911799004C40AF /* Frameworks */,
 				2F8D78A01C911799004C40AF /* Resources */,
+				F5CF9E330DE3D0B2D93B4DF7 /* Embed Pods Frameworks */,
+				E18E2F66D438879211D06412 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +161,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		531A12E7BC39BA5F9A9A4D05 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E18E2F66D438879211D06412 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moments/Pods-Moments-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5CF9E330DE3D0B2D93B4DF7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moments/Pods-Moments-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F8D789E1C911799004C40AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1834591C91264F001C5976 /* LoginViewController.swift in Sources */,
 				2F8D78A81C91179A004C40AF /* ViewController.swift in Sources */,
 				2F8D78A61C91179A004C40AF /* AppDelegate.swift in Sources */,
 			);
@@ -246,6 +325,7 @@
 		};
 		2F8D78B51C91179A004C40AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF8FD56B81F7CDBE78E67A6 /* Pods-Moments.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Moments/Info.plist;
@@ -257,6 +337,7 @@
 		};
 		2F8D78B61C91179A004C40AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3019A229D0D7AE63C90AF63B /* Pods-Moments.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Moments/Info.plist;
@@ -285,6 +366,7 @@
 				2F8D78B61C91179A004C40AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
