@@ -46,8 +46,24 @@ class LoginViewController: UIViewController {
         // call sign up function on the object
         newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             if let error = error {
+                let alert = UIAlertView()
                 if error.code == 202{
-                    
+                    alert.title = "Username already exists"
+                    alert.message = error.localizedDescription
+                    alert.addButtonWithTitle("OK")
+                    alert.show()
+                }
+                if error.code == 201{
+                    alert.title = "Enter Password"
+                    alert.message = error.localizedDescription
+                    alert.addButtonWithTitle("OK")
+                    alert.show()
+                }
+                else{
+                    alert.title = "Error"
+                    alert.message = error.localizedDescription
+                    alert.addButtonWithTitle("OK")
+                    alert.show()
                 }
             } else {
                 print("User Registered successfully")
